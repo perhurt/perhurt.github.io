@@ -8,11 +8,24 @@
       }
       window.onload = timedRefresh(30000);
     </script>
+    <style>
+	.boxframe {
+  		-moz-border-radius:10px;
+  		-webkit-border-radius:10px;
+  		background: #fff; /* fallback for browsers that don't understand rgba */
+  		border-radius:10px;
+  		border: solid 10px #000; /* fallback for browsers that don't understand rgba */
+  		background-color: rgba(255,255,255,0.8); /* slighly transparent white */
+  		border-color: rgba(0,0,0,0.2); /*Very transparent black*/
+	}	
+    </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-background-video="clock.mp4" data-background-video-loop data-background-video-muted>Slide 1</section>
+        <section data-background-video="clock.mp4" data-background-video-loop data-background-video-muted>
+		<h2 class="boxframe">Testing testing!</h2>
+	</section>
         <section>Should work</section>
       </div>
     </div>
